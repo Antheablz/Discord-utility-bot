@@ -70,7 +70,7 @@ async def on_raw_reaction_remove(payload):
     if payload.emoji.name == "💕":
         guild = await bot.fetch_guild(payload.guild_id)
         member = await guild.fetch_member(payload.user_id)
-        role = discord.utils.get(guild.roles, name = "BIG BOOTY")
+        role = discord.utils.get(guild.roles, name = "BIG WINNER")
         await member.remove_roles(role)
 
 
